@@ -302,7 +302,7 @@ APOST = "'"
 # Old code is parsed.  New code is generated from the parsed version,
 # using these literals:
 
-COL_LIMIT = 72
+COL_LIMIT = 78
 INDENTATION = '    '
 ASSIGNMENT = ' = '
 FUNCTION_PARAM_ASSIGNMENT = '='
@@ -339,7 +339,7 @@ CAN_SPLIT_STRINGS = False  # 2007 Mar 06
 DOC_TAB_REPLACEMENT = '....'  # 2007 May 24
 KEEP_UNASSIGNED_CONSTANTS = False  # 2010 Mar 10
 PARENTHESIZE_TUPLE_DISPLAY = True  # 2010 Mar 10
-JAVA_STYLE_LIST_DEDENT = False  # 2010 Sep 08
+JAVA_STYLE_LIST_DEDENT = True  # 2010 Sep 08
 
 # Repertoire of name-transformation functions:
 
