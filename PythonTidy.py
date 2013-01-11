@@ -302,7 +302,7 @@ APOST = "'"
 # Old code is parsed.  New code is generated from the parsed version,
 # using these literals:
 
-COL_LIMIT = 78
+COL_LIMIT = 79
 INDENTATION = '    '
 ASSIGNMENT = ' = '
 FUNCTION_PARAM_ASSIGNMENT = '='
@@ -318,7 +318,7 @@ CODING_SPEC = '# -*- coding: %s -*-' % CODING
 BOILERPLATE = NULL  # 2007 Mar 06
 BLANK_LINE = NULL
 KEEP_BLANK_LINES = True
-ADD_BLANK_LINES_AROUND_COMMENTS = True
+ADD_BLANK_LINES_AROUND_COMMENTS = False
 ADD_BLANK_LINE_AFTER_DOC_STRING = True
 MAX_SEPS_FUNC_DEF = 3  # 2007 May 24
 MAX_SEPS_FUNC_REF = 5  # 2007 May 24
