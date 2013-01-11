@@ -8,6 +8,7 @@ TODOs
 
  - Test suite:
 
+   - Cover lots of base cases first.
    - Python3 print statements if there before
    - Handle complicated list comprehensions
    - Fix doc strings over char limit
