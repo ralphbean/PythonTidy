@@ -1,17 +1,10 @@
 from setuptools import setup
 from config import version, summary
 
-# Make python 2.7 happy
-try:
-    import multiprocessing
-    import logging
-except ImportError:
-    pass
 
 install_requires = ['setuptools']
 try:
     import argparse
-    argparse    # make pyflakes happy
 except ImportError:
     install_requires.append('argparse')
 
@@ -41,5 +34,5 @@ setup(name='PythonTidy',
           'console_scripts': ['pythontidy = runner:main'],
       },
       test_suite="nose.collector",
-      tests_require=["nose", "sh"],
+      tests_require=["nose"],
 )
