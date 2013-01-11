@@ -34,12 +34,10 @@ def _test_tidy(input_filename, expected_filename):
 
     output = sh.python("PythonTidy.py", "tests/inputs/%s" % input_filename)
     difference = ''.join(difflib.unified_diff(
-        [line + '\n' for line in output.split('\n')],
         [line + '\n' for line in expected.split('\n')],
-        fromfile="output.py",
-        tofile="expected.py"
+        [line + '\n' for line in output.split('\n')],
+        fromfile="expected.py",
+        tofile="output.py",
     ))
 
     assert not difference, '\n' + difference
-
-    eq_(output, expected)
