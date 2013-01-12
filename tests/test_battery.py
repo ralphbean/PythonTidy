@@ -18,7 +18,7 @@ def test_battery():
 
 
 def gather_filenames(dirname):
-    filenames = os.listdir(dirname)
+    filenames = sorted(os.listdir(dirname))
     return [
         f for f in filenames if (
             not f.endswith('.swp')
